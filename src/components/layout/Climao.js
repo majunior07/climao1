@@ -1,6 +1,10 @@
+import styles from "./climao.module.css";
+
 function Climao(){
     return(
-        <h1>Página do Climão</h1>
+        <div className={styles.climao}>
+            
+        </div>
     );
 }
 

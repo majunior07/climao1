@@ -1,9 +1,13 @@
 import Climao from "../../layout/Climao";
 import Container from "../../layout/Container";
+import Navbar from "../../layout/Navbar";
 
 function Home(){
     return(
-            <Container/>
+            <Container>
+                <Navbar/>
+                <Climao/>                
+            </Container>
     );
 } 
 

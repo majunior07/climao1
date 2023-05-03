@@ -1,6 +1,6 @@
-function Container(){
+function Container(props){
     return(
-        <h1>Container - retangulo maior</h1>
+        <div>{props.children}</div>
     );
 }
 

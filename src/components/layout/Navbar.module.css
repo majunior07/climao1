@@ -1,0 +1,9 @@
+.navbar{
+    border: 1px solid red;
+    top: 0;
+    left: 0;
+    width: 1366px;
+    height: 70px;
+    background: #2BCBBA 0% 0% no-repeat padding-box;;
+    opacity: 1;
+}
