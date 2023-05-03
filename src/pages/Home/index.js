@@ -1,11 +1,10 @@
-import Container from "../../components/layout/Container";
+import styles from "./index.module.css";
 import Climao from "../../components/layout/Climao";
 
 
 function Home(){
     return( 
-        <div>
-            <Container/>
+        <div className="home">
             <Climao/>            
         </div>
     );
