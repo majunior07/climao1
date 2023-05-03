@@ -1,0 +1,14 @@
+.header{
+    top: 0px;
+    left: 0px;
+    width: 1366px;
+    height: 70px;
+    background: #2BCBBA 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header ul {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}

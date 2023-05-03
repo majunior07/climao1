@@ -1,11 +1,10 @@
 import styles from "./index.module.css";
-import Climao from "../../components/layout/Climao";
-
+import Header from "../../components/layout/Header";
 
 function Home(){
     return( 
-        <div className="home">
-            <Climao/>            
+        <div className={styles.home}>
+            <Header/>
         </div>
     );
 } 

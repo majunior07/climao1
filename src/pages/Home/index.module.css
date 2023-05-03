@@ -1,0 +1,11 @@
+.home{
+    border: 1px solid red;
+    top: 0px;
+    left: 0px;    
+    width: 1366px;
+    height: 768px;
+    background: #233740 0% 0% no-repeat padding-box;
+
+    /* opacity: 0.08; */
+
+}
