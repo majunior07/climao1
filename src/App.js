@@ -1,5 +1,4 @@
 import Routes from "./Routes"
-import Home from "./components/pages/Home";
 
 
 function App() {

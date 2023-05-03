@@ -1,0 +1,9 @@
+.container{
+    border: 1px solid black;
+    top: 0;
+    left: 0;
+    width: 1366px;
+    height: 698px;
+    background: #233740 0% 0% no-repeat padding-box;
+    opacity: 0.08;
+}
