@@ -1,16 +1,103 @@
 .externa{
-    border: 1px solid black;
     top: 128px;
     left: 793px;
     width: 471px;
     height: 97px;
+    margin-left: 15px;
+    background: transparent linear-gradient(90deg, #45AAF2 0%, #3867D6 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 8px #0000000F;
+    border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .data{
-    border: 1px solid red;
-    margin-left: 19px;
+
+    
 }
 
 .data ul{
     list-style: none;
+    height: 97px;
+    margin-left: 19px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dia{
+    top: 156px;
+    left: 812px;
+    width: 95px;
+    height: 30px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal bold 18px/21px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.dia2{
+    top: 182px;
+    left: 812px;
+    width: 90px;
+    height: 29px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.tempo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.imgEnsolarado{
+    top: 154px;
+    left: 933px;
+    width: 47px;
+    height: 47px;
+    background-color: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.ensolarado{
+    top: 168px;
+    margin-top: 13px;
+    margin-left: 5px;
+    left: 991px;
+    width: 90px;
+    height: 29px;
+    text-align: left;
+    font: normal normal bold 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+        
+}
+
+.temperatura{
+    
+}
+
+.temperaturaCima{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperaturaBaixo{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

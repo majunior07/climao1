@@ -12,6 +12,10 @@ function Home(){
                 </div>
                 <div className={styles.direita}>
                     <Dias/>
+                    <Dias/>
+                    <Dias/>
+                    <Dias/>
+                    <Dias/>
                 </div>
             </div>
 
