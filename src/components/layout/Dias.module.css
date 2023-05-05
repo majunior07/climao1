@@ -1,0 +1,16 @@
+.externa{
+    border: 1px solid black;
+    top: 128px;
+    left: 793px;
+    width: 471px;
+    height: 97px;
+}
+
+.data{
+    border: 1px solid red;
+    margin-left: 19px;
+}
+
+.data ul{
+    list-style: none;
+}
