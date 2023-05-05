@@ -5,6 +5,11 @@ function Home(){
     return( 
         <div className={styles.home}>
             <Header/>
+            <div className={styles.central}>
+
+            </div>
+
+
         </div>
     );
 } 
