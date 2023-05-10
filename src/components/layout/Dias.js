@@ -27,12 +27,12 @@ function Dias(){
         </div>
         <div className={styles.temperatura}>
             <div className={styles.temperaturaCima}>
-                <img src={minima_b} ></img>
-                <span>Min.</span>
-                <span>15°</span>
+                <img className={styles.desMinimo} src={minima_b} ></img>
+                <span className={styles.min}>Min.</span>
+                <span className={styles.minNumero}>15°</span>
             </div>
             <div className={styles.temperaturaBaixo}>
-                <img src={maxima_b} ></img>
+                <img className={styles.desMaximo} src={maxima_b} ></img>
                 <span>Max.</span>
                 <span>25°</span>
             </div>

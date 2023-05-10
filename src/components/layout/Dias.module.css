@@ -85,19 +85,66 @@
 }
 
 .temperatura{
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.desMinimo{
+    top: 141px;
+    left: 1137px;
+    width: 11px;
+    height: 27px;
+    margin-right: 9.79px;
 }
 
 .temperaturaCima{
-    border: 1px solid black;
+    width: 90px;
+    margin-right: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.min{
+    top: 147px;
+    left: 1158px;
+    width: 32px;
+    height: 17px;
+    text-align: left;
+    font: normal normal bold 12px/14px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.minNumero{
+    top: 145px;
+    left: 1195px;
+    width: 39px;
+    height: 19px;
+    text-align: left;
+    font: normal normal normal 18px/21px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
 
 .temperaturaBaixo{
-    border: 1px solid red;
+    width: 90px;
+    margin-right: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.desMaximo{
+    border: 1px solid red;
+    top: 182px;
+    left: 1136px;
+    width: 11px;
+    height: 26px;
+    margin-right: 9.79px;
+    margin-top: 11.2px;
 }
