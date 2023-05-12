@@ -4,37 +4,37 @@ import minima_b from "../../img/minima_b.png";
 import maxima_b from "../../img/maxima_b.png";
 
 
-function Dias(){
+function Dias(props){
     return(
       <div className={styles.externa}>
         <div className={styles.data}>
             <ul>
                 <li>
                     <p className={styles.dia}>
-                        Sexta
+                        {props.dia1}
                     </p>
                 </li>
                 <li>
                     <p className={styles.dia2}>
-                        11/10/2019
+                        {props.dia2}
                     </p>
                 </li>
             </ul>
         </div>
         <div className={styles.tempo}>
             <img  className={styles.imgEnsolarado} src={ensoradado_b}></img>
-            <span className={styles.ensolarado}>Ensolarado</span>
+            <span className={styles.ensolarado}>{props.clima}</span>
         </div>
         <div className={styles.temperatura}>
             <div className={styles.temperaturaCima}>
                 <img className={styles.desMinimo} src={minima_b} ></img>
                 <span className={styles.min}>Min.</span>
-                <span className={styles.minNumero}>15°</span>
+                <span className={styles.minNumero}>{props.min}</span>
             </div>
             <div className={styles.temperaturaBaixo}>
                 <img className={styles.desMaximo} src={maxima_b} ></img>
                 <span>Max.</span>
-                <span>25°</span>
+                <span>{props.max}</span>
             </div>
         </div>
       </div>
