@@ -1,7 +1,8 @@
 import styles from "./Dias.module.css";
-import ensoradado_b from "../../img/ensolarado_b.png";
+
 import minima_b from "../../img/minima_b.png";
 import maxima_b from "../../img/maxima_b.png";
+import tempestade_b from "../../img/tempestade_b.png";
 
 
 function Dias(props){
@@ -22,7 +23,7 @@ function Dias(props){
             </ul>
         </div>
         <div className={styles.tempo}>
-            <img  className={styles.imgEnsolarado} src={ensoradado_b}></img>
+            <div>{props.desClima}</div>
             <span className={styles.ensolarado}>{props.clima}</span>
         </div>
         <div className={styles.temperatura}>
