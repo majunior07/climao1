@@ -27,12 +27,52 @@
     height: 581px;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 6px 12px #0000000F;
     border-radius: 4px;
     opacity: 1;
+}
+
+.esquerdaCima{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.esquerdaCimaEsquerda{
+    border: 1px solid red;
+}
+
+.esquerdaCimaDireita{
+    
+}
+
+.minima{
+    border: 1px solid blue;
+}
+
+.maxima{
+    border: 1px solid green;
+}
+
+.esquerdaMeio{
+    border: 1px solid black;
+}
+
+.esquerdaMeioEsquerda{
+    border: 1px solid blue;
+}
+
+.esquerdaBaixo{
+    border: 1px solid black;
 }
 
 .direita{

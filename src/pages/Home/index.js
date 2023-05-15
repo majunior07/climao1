@@ -7,6 +7,11 @@ import chuvoso_b from "../../img/chuvoso_b.png";
 import nublado_b from "../../img/nublado_b.png";
 import minima_b from "../../img/minima_b.png";
 import maxima_b from "../../img/maxima_b.png";
+import localizacao from "../../img/localizacao.png";
+import minima from "../../img/minima.png";
+import maxima from "../../img/maxima.png";
+import media from "../../img/media.png";
+import nublado from "../../img/nublado.png";
 
 function Home(){
 
@@ -16,13 +21,45 @@ function Home(){
             <div className={styles.central}>
                 <div className={styles.esquerda}>
                     <div className={styles.esquerdaCima}>
-                        esquerda cima
+                        <div className={styles.esquerdaCimaEsquerda}>
+                            <img src={localizacao}></img>
+                            <p>Campinas</p>
+                            <p>Quin, 10 de outubro de 2019</p>
+                        </div>
+                        <div className={styles.esquerdaCimaDireita}>
+                            <div className={styles.minima}>
+                                <img src={minima}></img>
+                                <span>Min.</span>
+                                <span>15°</span>
+                            </div>
+                            <div className={styles.maxima}>
+                                <img src={maxima}></img>
+                                <span>Max.</span>
+                                <span>26°</span>
+                            </div>
+                        </div>
                     </div>
                     <div className={styles.esquerdaMeio}>
-                        esquera meio
+                        <div className={styles.esquerdaMeioEsquerda}>
+                            <img src={media}></img>
+                            <p>23°</p>
+                            <p>Sensação térmica 22°</p>
+                        </div>
+                        <div>
+                            <img src={nublado}></img>
+                            <p>Nublado</p>
+                        </div>
                     </div>
                     <div className={styles.esquerdaBaixo}>
-                        esquera baixo
+                        <div>
+                            umidade
+                        </div>
+                        <div>
+                            velocidade do vento
+                        </div>
+                        <div>
+                            direção do vento
+                        </div>
                     </div>
                 </div>
                 <div className={styles.direita}>
