@@ -22,7 +22,7 @@ function Dias(props){
             </ul>
         </div>
         <div className={styles.tempo}>
-            {props.desClima}
+            {props.imgClima}
             <span className={styles.ensolarado}>{props.clima}</span>
         </div>
         <div className={styles.temperatura}>
@@ -32,9 +32,9 @@ function Dias(props){
                 <span className={styles.minNumero}>{props.min}</span>
             </div>
             <div className={styles.temperaturaBaixo}>
-                <img className={styles.desMaximo} src={maxima_b} ></img>
-                <span>Max.</span>
-                <span>{props.max}</span>
+                {props.imgMax}
+                <span className={styles.max}>Max.</span>
+                <span className={styles.maxNumero}>{props.max}</span>
             </div>
         </div>
       </div>

@@ -103,20 +103,20 @@
     flex-direction: column;
 }
 
-.desMinimo{
-    top: 141px;
-    left: 1137px;
-    width: 11px;
-    height: 27px;
-    margin-right: 9.79px;
-}
-
 .temperaturaCima{
     width: 90px;
     margin-right: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.imgMin{
+    top: 141px;
+    left: 1137px;
+    width: 11px;
+    height: 27px;
+    margin-right: 9.79px;
 }
 
 .min{
@@ -159,4 +159,28 @@
     height: 26px;
     margin-right: 9.79px;
     margin-top: 11.2px;
+}
+
+.max{
+    top: 186px;
+    left: 1158px;
+    width: 32px;
+    height: 17px;
+    text-align: left;
+    font: normal normal bold 12px/14px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.maxNumero{
+    top: 183px;
+    left: 1195px;
+    width: 39px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 18px/21px Arial;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
 }
