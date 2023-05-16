@@ -10,38 +10,25 @@
     justify-content: space-between;
 }
 
+
 .divUl{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-
+    list-style: none;
+    margin-left: 50px;
+    width: 32px;
+    height: 32px;
 }
-
-.divUl ul{
-    
-
-}
-
-.divUl ul li{
-    top: 25px;
-    left: 141px;
-    width: 250px;
-    height: 26px;
-    text-align: left;
-    font: italic normal bold 20px/23px Arial;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-}   
 
 .input{
     border: 1px solid red;
-    top: 19px;
-    left: 991px;
+    margin-right: 60px;
     width: 273px;
     height: 32px;
     /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
+}
+
+.divInput{
+    border: 2px solid black;
 }

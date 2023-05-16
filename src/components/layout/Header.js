@@ -1,4 +1,5 @@
 import styles from "./Header.module.css";
+import logo from "../../img/LOGO.png";
 
 function Header(){
     return(
@@ -6,14 +7,11 @@ function Header(){
             <div className={styles.divUl}>
                 <ul className={styles.divUl}>
                     <li>
-                        <h1>Logo</h1>
-                    </li>
-                    <li>
-                        <h1>CLIMÃO.COM</h1>
+                        <img src={logo}></img>
                     </li>
                 </ul>
             </div>         
-            <div>
+            <div className={styles.divInput}>
                 <input placeholder="Buscar cidade" className={styles.input}></input>
             </div>
         </div>

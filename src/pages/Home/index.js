@@ -12,6 +12,9 @@ import minima from "../../img/minima.png";
 import maxima from "../../img/maxima.png";
 import media from "../../img/media.png";
 import nublado from "../../img/nublado.png";
+import umidade from "../../img/umidade.png";
+import velocidade_vento from "../../img/velocidade_vento.png";
+import direcao_vento from "../../img/direcao_vento.png";
 
 function Home(){
 
@@ -52,13 +55,19 @@ function Home(){
                     </div>
                     <div className={styles.esquerdaBaixo}>
                         <div>
-                            umidade
+                            <img src={umidade}></img>
+                            <p>Umidade</p>
+                            <p>66%</p>
                         </div>
                         <div>
-                            velocidade do vento
+                            <img src={velocidade_vento}></img>
+                            <p>Velocidade do vento</p>
+                            <p>23km/h</p>
                         </div>
                         <div>
-                            direção do vento
+                            <img src={velocidade_vento}></img>
+                            <p>Direção do vento</p>
+                            <p>ND</p>
                         </div>
                     </div>
                 </div>
