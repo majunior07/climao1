@@ -10,11 +10,11 @@
 }
 
 .central{
-    border: 1px solid red;
-    width: 1200px;
+    width: 1164px;
     height: 580px;
     margin-left: 100px;
     margin-top: 58px;
+    margin-right: 102px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,8 +25,9 @@
     border: 1px solid blue;
     width: 669px;
     height: 581px;
-    top: 0;
-    left: 0;
+    margin-top: 58px;
+    margin-left: 0px;
+    margin-bottom: 59px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,7 +77,9 @@
 }
 
 .direita{
-    border: 1px solid green;
-    width: 669px;
+    border: 10x solid green;
+    width: 471px;
     height: 581px;
+    margin-left: 1px;
+    margin-bottom: 5px;
 }
