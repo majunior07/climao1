@@ -6,7 +6,7 @@ import maxima_b from "../../img/maxima_b.png";
 
 function Dias(props){
     return(
-      <div className={styles.externa}>
+      <div className= {`${styles.externa} ${styles[props.background]}`} >
         <div className={styles.data}>
             <ul>
                 <li>

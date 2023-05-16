@@ -25,10 +25,11 @@ function Home(){
                 <div className={styles.esquerda}>
                     <div className={styles.esquerdaCima}>
                         <div className={styles.esquerdaCimaEsquerda}>
-                            <img src={localizacao}></img>
+                            <img className={styles.localizador} src={localizacao}></img>
                             <p>Campinas</p>
-                            <p>Quin, 10 de outubro de 2019</p>
                         </div>
+                            <p>Quin, 10 de outubro de 2019</p>
+                        
                         <div className={styles.esquerdaCimaDireita}>
                             <div className={styles.minima}>
                                 <img src={minima}></img>
