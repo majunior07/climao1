@@ -23,13 +23,15 @@ function Home(){
             <Header/>
             <div className={styles.central}>
                 <div className={styles.esquerda}>
-                    <div className={styles.esquerdaCima}>
-                        <div className={styles.esquerdaCimaEsquerda}>
+
+                    <div className={styles.esquerdaCima}>       
+                        <div>
                             <img className={styles.localizador} src={localizacao}></img>
-                            <p>Campinas</p>
-                        </div>
-                            <p>Quin, 10 de outubro de 2019</p>
-                        
+                            <div className={styles.cidadeData}>
+                                <p>Campinas</p>                            
+                                <p className={styles.cidade}>Quin, 10 de outubro de 2019</p>
+                            </div> 
+                        </div>      
                         <div className={styles.esquerdaCimaDireita}>
                             <div className={styles.minima}>
                                 <img src={minima}></img>
@@ -41,8 +43,9 @@ function Home(){
                                 <span>Max.</span>
                                 <span>26°</span>
                             </div>
-                        </div>
-                    </div>
+                        </div> 
+                    </div>      
+
                     <div className={styles.esquerdaMeio}>
                         <div className={styles.esquerdaMeioEsquerda}>
                             <img src={media}></img>
@@ -72,6 +75,7 @@ function Home(){
                         </div>
                     </div>
                 </div>
+                
                 <div className={styles.direita}>
                     <Dias 
                         dia1="Sexta" 
@@ -125,7 +129,6 @@ function Home(){
                     />
                 </div>
             </div>
-
 
         </div>
     );
