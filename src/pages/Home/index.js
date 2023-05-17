@@ -25,23 +25,23 @@ function Home(){
                 <div className={styles.esquerda}>
 
                     <div className={styles.esquerdaCima}>       
-                        <div>
+                        <div className={styles.esquerdaCimaEsquerda}>
                             <img className={styles.localizador} src={localizacao}></img>
                             <div className={styles.cidadeData}>
-                                <p>Campinas</p>                            
-                                <p className={styles.cidade}>Quin, 10 de outubro de 2019</p>
+                                <p className={styles.cidade}>Campinas</p>                            
+                                <p className={styles.data}>Quin, 10 de outubro de 2019</p>
                             </div> 
                         </div>      
                         <div className={styles.esquerdaCimaDireita}>
                             <div className={styles.minima}>
                                 <img src={minima}></img>
-                                <span>Min.</span>
-                                <span>15°</span>
+                                <span className={styles.min}>Min.</span>
+                                <span className={styles.min2}>15°</span>
                             </div>
                             <div className={styles.maxima}>
                                 <img src={maxima}></img>
-                                <span>Max.</span>
-                                <span>26°</span>
+                                <span className={styles.max}>Max.</span>
+                                <span className={styles.max2}>26°</span>
                             </div>
                         </div> 
                     </div>      
@@ -49,8 +49,10 @@ function Home(){
                     <div className={styles.esquerdaMeio}>
                         <div className={styles.esquerdaMeioEsquerda}>
                             <img src={media}></img>
-                            <p>23°</p>
-                            <p>Sensação térmica 22°</p>
+                            <div className={styles.sensacaoTerm}>
+                                <p >23°</p>
+                                <p>Sensação térmica 22°</p>
+                            </div>                            
                         </div>
                         <div>
                             <img src={nublado}></img>
