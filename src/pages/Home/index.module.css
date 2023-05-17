@@ -138,15 +138,83 @@
     border: 1px solid black;
     width: 669px;
     height: 193px;
+    margin-top: 0px;
     margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .esquerdaMeioEsquerda{
-    border: 1px solid blue;
+    margin-top: 0px;
+    display: flex;
+    align-items: start;
+    margin-left: 20px;
+    width: 243px;
+    height: 160px;
 }
 
 .sensacaoTerm{
-    border: 10px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.sensacaoTerm2{
+    margin-left: 25px;
+    text-align: center;
+    font: normal normal normal 160px/184px Arial;
+    letter-spacing: 0px;
+    color: #4B6584;
+    opacity: 1;
+}
+
+.sensacaoTerm3{
+    width: 190px;
+    height: 30px;
+    margin-top: 00px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    border: 10px solid #2BCBBA;
+    border-radius: 200px;
+    opacity: 1;
+}
+
+.media{
+    margin-left: 0px;
+    margin-top: 35px;
+    display: block;
+}
+
+.nublado{
+    border: 1px solid red;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.desNublado{
+    border: 1px solid red;
+    width: 196px;
+    height: 115px;
+    margin-top: 0px;
+    left: 503px;
+
+}
+
+.nublado2{
+    border: 1px solid red;
+    margin-top: 22px;
+    text-align: center;
+    font: normal normal bold 23px/27px Arial;
+    letter-spacing: 0px;
+    color: #4B6584;
+    opacity: 1;
 }
 
 .esquerdaBaixo{

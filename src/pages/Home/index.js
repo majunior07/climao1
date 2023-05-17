@@ -48,15 +48,15 @@ function Home(){
 
                     <div className={styles.esquerdaMeio}>
                         <div className={styles.esquerdaMeioEsquerda}>
-                            <img src={media}></img>
+                            <img className={styles.media} src={media}></img>
                             <div className={styles.sensacaoTerm}>
-                                <p >23°</p>
-                                <p>Sensação térmica 22°</p>
+                                <p className={styles.sensacaoTerm2}>23°</p>
+                                <p className={styles.sensacaoTerm3}>Sensação térmica 22°</p>
                             </div>                            
                         </div>
-                        <div>
-                            <img src={nublado}></img>
-                            <p>Nublado</p>
+                        <div className={styles.nublado}>
+                            <img className={styles.desNublado} src={nublado}></img>
+                            <p className={styles.nublado2}>Nublado</p>
                         </div>
                     </div>
                     <div className={styles.esquerdaBaixo}>
