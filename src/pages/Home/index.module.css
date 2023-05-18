@@ -150,11 +150,13 @@
     display: flex;
     align-items: start;
     margin-left: 20px;
+    margin-bottom: 30px;
     width: 243px;
     height: 160px;
 }
 
 .sensacaoTerm{
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -162,8 +164,15 @@
 }
 
 .sensacaoTerm2{
+    width: 243px;
+    height: 160px;
+    margin-bottom: 0px;
     margin-left: 25px;
     text-align: center;
+    font: normal normal normal 160px/184px Arial;
+    letter-spacing: 0px;
+    color: #4B6584;
+    opacity: 1;text-align: center;
     font: normal normal normal 160px/184px Arial;
     letter-spacing: 0px;
     color: #4B6584;
@@ -171,14 +180,14 @@
 }
 
 .sensacaoTerm3{
-    width: 190px;
+    width: 230px;
     height: 30px;
-    margin-top: 00px;
+    margin-left: 15px;
     display: flex;
     align-items: center;
-    padding-left: 50px;
-    border: 10px solid #2BCBBA;
-    border-radius: 200px;
+    justify-content: center;
+    border: 1px solid #2BCBBA;
+    border-radius: 50px;
     opacity: 1;
 }
 
@@ -189,8 +198,9 @@
 }
 
 .nublado{
-    border: 1px solid red;
+    height: 190px;
     margin-left: 100px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,28 +209,26 @@
 }
 
 .desNublado{
-    border: 1px solid red;
     width: 196px;
     height: 115px;
-    margin-top: 0px;
-    left: 503px;
-
 }
 
 .nublado2{
-    border: 1px solid red;
+    width: 196px;
+    height: 29px;
     margin-top: 22px;
     text-align: center;
     font: normal normal bold 23px/27px Arial;
     letter-spacing: 0px;
     color: #4B6584;
     opacity: 1;
-}
+}    
 
 .esquerdaBaixo{
     border: 1px solid black;
     width: 669px;
-    height: 163px;
+    height: 180px;
+    margin-top: 2px;
     margin-bottom: 34px;
     display: flex;
     align-items: center;
@@ -233,4 +241,40 @@
     height: 581px;
     margin-left: 1px;
     margin-bottom: 5px;
+}
+
+.umidade{
+    border: 1px solid red;
+    width: 180px;
+    height: 163px;
+    margin-left: 45px;
+    margin-right: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 12px #0000001A;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.velocidade{
+    border: 1px solid red;
+    width: 180px;
+    height: 163px;
+    margin-right: 20px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 12px #0000001A;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.direcao{
+    border: 1px solid red;
+    width: 180px;
+    height: 163px;
+    margin-right: 44px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 12px #0000001A;
+    border-radius: 4px;
+    opacity: 1;
 }

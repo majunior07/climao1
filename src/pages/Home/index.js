@@ -60,17 +60,17 @@ function Home(){
                         </div>
                     </div>
                     <div className={styles.esquerdaBaixo}>
-                        <div>
+                        <div className={styles.umidade}>
                             <img src={umidade}></img>
                             <p>Umidade</p>
                             <p>66%</p>
                         </div>
-                        <div>
+                        <div className={styles.velocidade}>
                             <img src={velocidade_vento}></img>
                             <p>Velocidade do vento</p>
                             <p>23km/h</p>
                         </div>
-                        <div>
+                        <div className={styles.direcao}>
                             <img src={velocidade_vento}></img>
                             <p>Direção do vento</p>
                             <p>ND</p>
