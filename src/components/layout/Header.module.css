@@ -18,17 +18,34 @@
     height: 32px;
 }
 
-.input{
-    border: 1px solid red;
-    margin-right: 102px;
+.divInput{
+    margin-top: 19px;
+    margin-right: 100px;
     width: 273px;
     height: 32px;
     /* UI Properties */
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-.divInput{
-    border: 2px solid black;
+.input{
+    margin-left: 10px;
+    border: none;
+    width: 137px;
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 12px/14px Arial;
+    letter-spacing: 0px;
+    color: #778CA3;
+    opacity: 1;
+}
+
+.desBusca{
+    margin-right: 20px;
 }

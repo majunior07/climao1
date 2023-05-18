@@ -61,19 +61,19 @@ function Home(){
                     </div>
                     <div className={styles.esquerdaBaixo}>
                         <div className={styles.umidade}>
-                            <img src={umidade}></img>
-                            <p>Umidade</p>
-                            <p>66%</p>
+                            <img className={styles.desUmidade} src={umidade}></img>
+                            <p className={styles.umidade2}>Umidade</p>
+                            <p className={styles.umidade3}>66%</p>
                         </div>
                         <div className={styles.velocidade}>
-                            <img src={velocidade_vento}></img>
-                            <p>Velocidade do vento</p>
-                            <p>23km/h</p>
+                            <img className={styles.desVelocidade} src={velocidade_vento}></img>
+                            <p className={styles.velocidade2}>Velocidade do vento</p>
+                            <p className={styles.velocidade3}>23km/h</p>
                         </div>
                         <div className={styles.direcao}>
-                            <img src={velocidade_vento}></img>
-                            <p>Direção do vento</p>
-                            <p>ND</p>
+                            <img className={styles.desDirecao} src={direcao_vento}></img>
+                            <p className={styles.direcao2}>Direção do vento</p>
+                            <p className={styles.direcao3}>ND</p>
                         </div>
                     </div>
                 </div>

@@ -21,8 +21,7 @@
 }
 
 .esquerda{
-    /* Layout Properties */
-    border: 1px solid blue;
+    /* Layout Properties */ 
     width: 669px;
     height: 581px;
     margin-top: 58px;
@@ -41,7 +40,6 @@
 }
 
 .esquerdaCima{
-    border: 1px solid black;
     width: 669px;
     height: 102px;
     margin-top: 0px;
@@ -135,7 +133,6 @@
 }
 
 .esquerdaMeio{
-    border: 1px solid black;
     width: 669px;
     height: 193px;
     margin-top: 0px;
@@ -225,7 +222,6 @@
 }    
 
 .esquerdaBaixo{
-    border: 1px solid black;
     width: 669px;
     height: 180px;
     margin-top: 2px;
@@ -244,7 +240,6 @@
 }
 
 .umidade{
-    border: 1px solid red;
     width: 180px;
     height: 163px;
     margin-left: 45px;
@@ -253,10 +248,38 @@
     box-shadow: 0px 3px 12px #0000001A;
     border-radius: 4px;
     opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+.umidade2{
+    width: 181px;
+    height: 29px;
+    margin-top: 13px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #4B6584;
+    opacity: 1;
+}
+
+.umidade3{
+    width: 181px;
+    height: 32px;
+    margin-top: 16px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal bold 28px/32px Arial;
+    letter-spacing: 0px;
+    color: #4B6584;
+    opacity: 1;
+}
+
+
 .velocidade{
-    border: 1px solid red;
     width: 180px;
     height: 163px;
     margin-right: 20px;
@@ -265,10 +288,37 @@
     box-shadow: 0px 3px 12px #0000001A;
     border-radius: 4px;
     opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.velocidade2{
+    width: 180px;
+    height: 29px;
+    margin-top: 13px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #4B6584;
+    opacity: 1;
+}
+
+.velocidade3{
+    width: 179px;
+    height: 32px;
+    margin-top: 16px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal bold 28px/32px Arial;
+    letter-spacing: 0px;
+    color: #4B6584;
+    opacity: 1;
 }
 
 .direcao{
-    border: 1px solid red;
     width: 180px;
     height: 163px;
     margin-right: 44px;
@@ -276,5 +326,33 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 12px #0000001A;
     border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.direcao2{
+    width: 180px;
+    height: 29px;
+    margin-top: 13px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 16px/18px Arial;
+    letter-spacing: 0px;
+    color: #4B6584;
+    opacity: 1;
+}
+
+.direcao3{
+    width: 180px;
+    height: 32px;
+    margin-top: 16px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal bold 28px/32px Arial;
+    letter-spacing: 0px;
+    color: #4B6584;
     opacity: 1;
 }
