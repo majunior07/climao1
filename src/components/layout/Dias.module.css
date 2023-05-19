@@ -16,8 +16,8 @@
 }
 
 .data{
-
-    
+    border: 1px solid black;
+    margin-left: 0px;
 }
 
 .data ul{
@@ -31,8 +31,7 @@
 }
 
 .dia{
-    top: 156px;
-    left: 812px;
+    margin-top: 28px;
     width: 95px;
     height: 30px;
     /* UI Properties */
@@ -44,10 +43,9 @@
 }
 
 .dia2{
-    top: 182px;
-    left: 812px;
     width: 90px;
     height: 29px;
+    margin-bottom: 14px;
     /* UI Properties */
     text-align: left;
     font: normal normal normal 16px/18px Arial;
@@ -57,39 +55,22 @@
 }
 
 .tempo{
+    border: 1px solid black;
+    margin-left: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
    
 }
-.imgEnsolarado{
-    top: 154px;
-    left: 933px;
-    width: 47px;
-    height: 47px;
-    background-color: #FFFFFF 0% 0% no-repeat padding-box;
-    opacity: 1;
-}
-
-.imgTempestade{
-
-}
-
-.imgChuvoso{
-
-}
-
-.imgNublado{
-    
-}
 
 .ensolarado{
-    top: 168px;
     margin-top: 13px;
     margin-left: 5px;
-    left: 991px;
     width: 90px;
     height: 29px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     text-align: left;
     font: normal normal bold 16px/18px Arial;
     letter-spacing: 0px;
@@ -99,6 +80,9 @@
 }
 
 .temperatura{
+    border: 1px solid black;
+    margin-left: 56px;
+    margin-right: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
