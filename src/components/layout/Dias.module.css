@@ -1,10 +1,10 @@
 .externa{
-    margin-top: 0px;
+    margin-top: 3px;
     margin-left: 0px;
     width: 471px;
     height: 97px;
     margin-left: 15px;
-    margin-bottom: 22px;
+    margin-bottom: 23px;
     background: transparent linear-gradient(90deg, #45AAF2 0%, #3867D6 100%) 0% 0% no-repeat padding-box;
     box-shadow: 0px 4px 8px #0000000F;
     border-radius: 4px;
@@ -15,7 +15,6 @@
 }
 
 .data{
-    border: 1px solid black;
     margin-left: 0px;
     width: 130px;
 }
@@ -55,7 +54,6 @@
 }
 
 .tempo{
-    border: 1px solid black;
     margin-left: 40px;
     display: flex;
     align-items: center;
@@ -80,7 +78,6 @@
 }
 
 .temperatura{
-    border: 1px solid black;
     margin-left: 46px;
     display: flex;
     align-items: center;
@@ -93,7 +90,7 @@
     margin-right: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .imgMin{
@@ -125,6 +122,7 @@
 .temperaturaBaixo{
     width: 90px;
     margin-right: 30px;
+    margin-top: 11px;
     display: flex;
     align-items: center;
     justify-content: space-between;

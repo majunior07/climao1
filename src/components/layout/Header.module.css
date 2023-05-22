@@ -1,6 +1,4 @@
 .header{
-    top: 0px;
-    left: 0px;
     width: 1366px;
     height: 70px;
     background: #2BCBBA 0% 0% no-repeat padding-box;
@@ -30,10 +28,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .input{
+    border: 10px solid blue;
     margin-left: 10px;
     border: none;
     width: 137px;

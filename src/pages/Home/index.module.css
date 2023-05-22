@@ -40,6 +40,7 @@
 }
 
 .esquerdaCima{
+    border: 1px solid black;
     width: 669px;
     height: 102px;
     margin-top: 0px;
@@ -50,11 +51,13 @@
 }
 
 .esquerdaCimaEsquerda{
+    border: 10px solid black;
     display: flex; 
     align-items:start;   
 }
 
 .cidadeData{
+    border: 1px solid red;
     display: block;
 }
 
@@ -64,6 +67,7 @@
 }
 
 .cidade {
+    border: 1px solid blue;
     text-align: left;
     font: normal normal bold 26px/31px Arial;
     letter-spacing: 0px;
@@ -72,6 +76,7 @@
 }
 
 .data{
+    border: 1px solid green;
     text-align: left;
     font: normal normal normal 16px/18px Arial;
     letter-spacing: 0px;
