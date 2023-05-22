@@ -16,6 +16,8 @@ import umidade from "../../img/umidade.png";
 import velocidade_vento from "../../img/velocidade_vento.png";
 import direcao_vento from "../../img/direcao_vento.png";
 
+import api from "../../services/api";
+
 function Home(){
 
     return( 

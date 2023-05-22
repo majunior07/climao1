@@ -40,24 +40,22 @@
 }
 
 .esquerdaCima{
-    border: 1px solid black;
     width: 669px;
     height: 102px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.esquerdaCimaEsquerda{
-    border: 10px solid black;
+.esquerdaCimaEsquerda{  
+    margin-left: 10px;
     display: flex; 
     align-items:start;   
 }
 
 .cidadeData{
-    border: 1px solid red;
     display: block;
 }
 
@@ -67,7 +65,6 @@
 }
 
 .cidade {
-    border: 1px solid blue;
     text-align: left;
     font: normal normal bold 26px/31px Arial;
     letter-spacing: 0px;
@@ -76,7 +73,6 @@
 }
 
 .data{
-    border: 1px solid green;
     text-align: left;
     font: normal normal normal 16px/18px Arial;
     letter-spacing: 0px;
