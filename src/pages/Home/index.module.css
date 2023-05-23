@@ -241,6 +241,10 @@
     margin-bottom: 5px;
 }
 
+.externa:nth-child(1){
+    background: transparent linear-gradient(90deg, #FED330 0%, #FA8231 100%) 0% 0% no-repeat padding-box;
+}
+
 .umidade{
     width: 180px;
     height: 163px;
