@@ -8,15 +8,18 @@ import Busca from "../../img/Busca.png";
 
 function Header(){
 
-    const [city, setCity] = useState('Poços de Caldas');
+    const [city, setCity] = useState('Belo Horizonte');
 
     const handleChange = (e) => {
         setCity(e.target.value)
     }
 
     function handleSearch() {
-        axios.get('http://api.weatherapi.com/v1/current.json?key=6dc397328dea4991b1e175154232205&q=campinas&aqi=no')
-    }
+        axios.get(`http://api.weatherapi.com/v1/current.json?key=6dc397328dea4991b1e175154232205&q=${city}&lang=br`)
+        .then((response) => {
+            console.log(response.json)
+        });       
+    };
 
     return(
         <div className={styles.header}>
@@ -34,8 +37,10 @@ function Header(){
                     className={styles.input} 
                     value={city}>
                 </input>
-                <img className={styles.desBusca} src={Busca}></img>
+                <img className={styles.desBusca} src={Busca} onClick={handleSearch}></img>
             </div>
+
+                     
         </div>
     );
 }
