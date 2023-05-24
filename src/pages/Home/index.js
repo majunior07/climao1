@@ -17,8 +17,19 @@ import velocidade_vento from "../../img/velocidade_vento.png";
 import direcao_vento from "../../img/direcao_vento.png";
 
 import api from "../../services/api";
+import axios from "axios";
 
 function Home(){
+
+    function getClima(){
+        axios.get(api)
+        .then(response => {
+            console.log(response)
+        })
+        .catch(error=> console.log(error))
+    }
+    
+    getClima();
 
     return( 
         <div className={styles.home}>
