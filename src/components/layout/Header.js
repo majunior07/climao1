@@ -1,8 +1,23 @@
+import { useState } from "react";
+
+import axios from "axios";
+
 import styles from "./Header.module.css";
 import logo from "../../img/LOGO.png";
 import Busca from "../../img/Busca.png";
 
 function Header(){
+
+    const [city, setCity] = useState('Poços de Caldas');
+
+    const handleChange = (e) => {
+        setCity(e.target.value)
+    }
+
+    function handleSearch() {
+        axios.get('http://api.weatherapi.com/v1/current.json?key=6dc397328dea4991b1e175154232205&q=campinas&aqi=no')
+    }
+
     return(
         <div className={styles.header}>
             <div className={styles.divUl}>
@@ -13,7 +28,11 @@ function Header(){
                 </ul>
             </div>         
             <div className={styles.divInput}>
-                <input placeholder="Buscar cidade" className={styles.input}>
+                <input 
+                    onChange={handleChange}
+                    placeholder="Buscar cidade" 
+                    className={styles.input} 
+                    value={city}>
                 </input>
                 <img className={styles.desBusca} src={Busca}></img>
             </div>
