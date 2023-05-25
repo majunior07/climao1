@@ -19,21 +19,15 @@ import direcao_vento from "../../img/direcao_vento.png";
 import api from "../../services/api";
 import axios from "axios";
 
+import { useState } from "react";
+
 function Home(){
 
-    function getClima(){
-        axios.get(api)
-        .then(response => {
-            console.log(response)
-        })
-        .catch(error=> console.log(error))
-    }
-    
-    getClima();
-
+    const [clima, setClima] = useState({});
+   
     return( 
         <div className={styles.home}>
-            <Header/>
+            <Header setClima={setClima} />
             <div className={styles.central}>
                 <div className={styles.esquerda}>
 

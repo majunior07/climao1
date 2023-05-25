@@ -6,19 +6,26 @@ import styles from "./Header.module.css";
 import logo from "../../img/LOGO.png";
 import Busca from "../../img/Busca.png";
 
-function Header(){
+function Header(props){
 
-    const [city, setCity] = useState('Belo Horizonte');
+    const [city, setCity] = useState('');
+    const [clima, setClima] = useState({});
+
+    const url = `http://api.weatherapi.com/v1/current.json?key=6dc397328dea4991b1e175154232205&q=${city}&lang=pt`;
 
     const handleChange = (e) => {
         setCity(e.target.value)
     }
 
     function handleSearch() {
-        axios.get(`http://api.weatherapi.com/v1/current.json?key=6dc397328dea4991b1e175154232205&q=${city}&lang=br`)
+        axios.get(url)
         .then((response) => {
-            console.log(response.json)
-        });       
+            props.setClima(response.data)
+            console.log(response.data)
+        })
+        .catch(error => console.log(error))       
+
+        setClima('');
     };
 
     return(
