@@ -20,12 +20,11 @@ function Header(props){
     function handleSearch() {
         axios.get(url)
         .then((response) => {
-            props.setClima(response.data)
-            console.log(response.data)
+            props.setClima(response.data);
+            setCity('')
         })
-        .catch(error => console.log(error))       
+        .catch(error => console.log(error));       
 
-        setClima('');
     };
 
     return(
