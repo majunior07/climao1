@@ -23,12 +23,11 @@ import { useState } from "react";
 
 function Home(){
 
-    const [clima, setClima] = useState({})
 
    
     return( 
         <div className={styles.home} >
-            <Header setClima={setClima}/>
+            <Header/>
             <div className={styles.central}>
                 <div className={styles.esquerda}>
 
