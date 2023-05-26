@@ -23,11 +23,11 @@ import { useState } from "react";
 
 function Home(){
 
-
+    const [clima, setClima] = useState({});
    
     return( 
         <div className={styles.home} >
-            <Header/>
+            <Header setClima={setClima}/>
             <div className={styles.central}>
                 <div className={styles.esquerda}>
 
@@ -35,8 +35,8 @@ function Home(){
                         <div className={styles.esquerdaCimaEsquerda}>
                             <img className={styles.localizador} src={localizacao}></img>
                             <div className={styles.cidadeData}>
-                                <p className={styles.cidade}>Campinas</p>                            
-                                <p className={styles.data}>Quin, 10 de outubro de 2019</p>
+                                <p className={styles.cidade}>{clima.location.name}</p>                            
+                                <p className={styles.data}>{clima.location.localtime}</p>
                             </div> 
                         </div>      
                         <div className={styles.esquerdaCimaDireita}>

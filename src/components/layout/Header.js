@@ -6,10 +6,10 @@ import styles from "./Header.module.css";
 import logo from "../../img/LOGO.png";
 import Busca from "../../img/Busca.png";
 
-function Header(){
+function Header({setClima}){
 
     const [city, setCity] = useState('Belo Horizonte');
-    const [clima, setClima] = useState({});
+    
 
     const url = `http://api.weatherapi.com/v1/current.json?key=6dc397328dea4991b1e175154232205&q=${city}&lang=pt`;
 
@@ -45,12 +45,7 @@ function Header(){
                 </input>
                 <img className={styles.desBusca} src={Busca} onClick={handleSearch}></img>
             </div>
-
-            <div>
-                <p>{clima.location.name}</p>
-            </div>
-
-                     
+                                
         </div>
     );
 }
