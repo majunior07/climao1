@@ -86,7 +86,7 @@ function Home(){
                 </div>
                 
                 <div className={styles.direita}>
-                    <Dias 
+                    <Dias setClima={setClima}
                         dia1="Sexta" 
                         dia2="11/10/2019" 
                         imgClima={<img className={styles.imgEnsolarado} src={ensolarado_b} ></img>} 
@@ -136,6 +136,8 @@ function Home(){
                         imgMax={<img src={maxima_b}></img>}
                         max="24°"
                     />
+
+
                 </div>
             </div>
 
