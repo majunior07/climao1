@@ -21,7 +21,7 @@ function Header({setClima}){
         axios.get(url)
         .then((response) => {
             setClima(response.data);
-            console.log(response)
+            console.log(response.data)
         })
         .catch(error => console.log(error));       
 

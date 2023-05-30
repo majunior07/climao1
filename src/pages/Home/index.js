@@ -35,8 +35,8 @@ function Home(){
                         <div className={styles.esquerdaCimaEsquerda}>
                             <img className={styles.localizador} src={localizacao}></img>
                             <div className={styles.cidadeData}>
-                                <p className={styles.cidade}>{clima.location.name}</p>                            
-                                <p className={styles.data}>{clima.location.localtime}</p>
+                                <p className={styles.cidade}>aaaa{/*{clima.location.name}*/}</p>                            
+                                <p className={styles.data}>aaaaa{/*{clima.location.localtime}*/}</p>
                             </div> 
                         </div>      
                         <div className={styles.esquerdaCimaDireita}>
