@@ -25,6 +25,7 @@ function Header({setClima}){
         })
         .catch(error => console.log(error));       
 
+        setCity('')
     };
 
     return(

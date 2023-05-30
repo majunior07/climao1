@@ -35,8 +35,8 @@ function Home(){
                         <div className={styles.esquerdaCimaEsquerda}>
                             <img className={styles.localizador} src={localizacao}></img>
                             <div className={styles.cidadeData}>
-                                <p className={styles.cidade}>aaaa{/*{clima.location.name}*/}</p>                            
-                                <p className={styles.data}>aaaaa{/*{clima.location.localtime}*/}</p>
+                                { clima.location ? <p className={styles.cidade}>{clima.location.name} </p> : null }
+                                { clima.location ? <p className={styles.data}>{clima.location.localtime}</p> : null}                                
                             </div> 
                         </div>      
                         <div className={styles.esquerdaCimaDireita}>
@@ -57,13 +57,15 @@ function Home(){
                         <div className={styles.esquerdaMeioEsquerda}>
                             <img className={styles.media} src={media}></img>
                             <div className={styles.sensacaoTerm}>
-                                <p className={styles.sensacaoTerm2}>23°</p>
-                                <p className={styles.sensacaoTerm3}>Sensação térmica 22°</p>
+                                { clima.current ? <p className={styles.sensacaoTerm2}>{clima.current.temp_c}</p> : null}
+                                { clima.current ? <p className={styles.sensacaoTerm3}>Sensação térmica {clima.current.feelslike_c}°</p> : null}
+                                
                             </div>                            
                         </div>
                         <div className={styles.nublado}>
                             <img className={styles.desNublado} src={nublado}></img>
-                            <p className={styles.nublado2}>Nublado</p>
+                            { clima.current ?  <p className={styles.nublado2}>{clima.current.condition.text}</p> : null}
+                           
                         </div>
                     </div>
                     <div className={styles.esquerdaBaixo}>
@@ -75,12 +77,14 @@ function Home(){
                         <div className={styles.velocidade}>
                             <img className={styles.desVelocidade} src={velocidade_vento}></img>
                             <p className={styles.velocidade2}>Velocidade do vento</p>
-                            <p className={styles.velocidade3}>23km/h</p>
+                            { clima.current ? <p className={styles.velocidade3}>{clima.current.wind_kph}km/h</p> : null}
+                            
                         </div>
                         <div className={styles.direcao}>
                             <img className={styles.desDirecao} src={direcao_vento}></img>
                             <p className={styles.direcao2}>Direção do vento</p>
-                            <p className={styles.direcao3}>ND</p>
+                            { clima.current ? <p className={styles.direcao3}>{clima.current.wind_dir}</p> : null}
+                            
                         </div>
                     </div>
                 </div>
