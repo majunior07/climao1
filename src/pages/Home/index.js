@@ -31,6 +31,7 @@ function Home(){
             <div className={styles.central}>
                 <div className={styles.esquerda}>
 
+                {/*   */}
                     <div className={styles.esquerdaCima}>       
                         <div className={styles.esquerdaCimaEsquerda}>
                             <img className={styles.localizador} src={localizacao}></img>
@@ -43,7 +44,8 @@ function Home(){
                             <div className={styles.minima}>
                                 <img src={minima}></img>
                                 <span className={styles.min}>Min.</span>
-                                <span className={styles.min2}>15°</span>
+                                { clima.current ? <span className={styles.min2}>{clima.current.maxtemp_c}</span> : null}
+                                
                             </div>
                             <div className={styles.maxima}>
                                 <img src={maxima}></img>

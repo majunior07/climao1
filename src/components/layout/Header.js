@@ -11,7 +11,7 @@ function Header({setClima}){
     const [city, setCity] = useState('Belo Horizonte');
     
 
-    const url = `http://api.weatherapi.com/v1/current.json?key=6dc397328dea4991b1e175154232205&q=${city}&lang=pt`;
+    const url = `http://api.weatherapi.com/v1/forecast.json?key=6dc397328dea4991b1e175154232205&q=${city}days=5`;
 
     const handleChange = (e) => {
         setCity(e.target.value)
