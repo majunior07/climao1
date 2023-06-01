@@ -44,7 +44,7 @@ function Home(){
                             <div className={styles.minima}>
                                 <img src={minima}></img>
                                 <span className={styles.min}>Min.</span>
-                                { clima.current ? <span className={styles.min2}>{clima.current.maxtemp_c}</span> : null}
+                                <span className={styles.min2}>aaaa°</span>
                                 
                             </div>
                             <div className={styles.maxima}>
