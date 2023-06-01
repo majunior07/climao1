@@ -44,13 +44,14 @@ function Home(){
                             <div className={styles.minima}>
                                 <img src={minima}></img>
                                 <span className={styles.min}>Min.</span>
-                                <span className={styles.min2}>aaaa°</span>
+                                { clima.forecast ? <span className={styles.min2}>{clima.forecast.forecastday[0].day.mintemp_c}°</span> : null}
+                                
                                 
                             </div>
                             <div className={styles.maxima}>
                                 <img src={maxima}></img>
                                 <span className={styles.max}>Max.</span>
-                                <span className={styles.max2}>26°</span>
+                                { clima.forecast ? <span className={styles.max2}>{clima.forecast.forecastday[0].day.maxtemp_c}°</span> : null}                                
                             </div>
                         </div> 
                     </div>      
