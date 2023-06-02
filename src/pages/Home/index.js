@@ -31,65 +31,76 @@ function Home(){
             <div className={styles.central}>
                 <div className={styles.esquerda}>
 
-                {/*   */}
-                    <div className={styles.esquerdaCima}>       
-                        <div className={styles.esquerdaCimaEsquerda}>
-                            <img className={styles.localizador} src={localizacao}></img>
-                            <div className={styles.cidadeData}>
-                                { clima.location ? <p className={styles.cidade}>{clima.location.name} </p> : null }
-                                { clima.location ? <p className={styles.data}>{clima.location.localtime}</p> : null}                                
+                
+                    <div className={styles.esquerdaCima}>   
+
+                        { clima.location != undefined &&
+                            <div className={styles.esquerdaCimaEsquerda}>
+                                <img className={styles.localizador} src={localizacao}></img>
+                                <div className={styles.cidadeData}>
+                                  { clima.location ? <p className={styles.cidade}>{clima.location.name} </p> : null }
+                                  { clima.location ? <p className={styles.data}>{clima.location.localtime}</p> : null}                                
+                                </div> 
+                            </div>
+                        }        
+
+                        { clima.forecast != undefined && 
+                            <div className={styles.esquerdaCimaDireita}>
+                                <div className={styles.minima}>
+                                    <img src={minima}></img>
+                                    <span className={styles.min}>Min.</span>
+                                    { clima.forecast ? <span className={styles.min2}>{clima.forecast.forecastday[0].day.mintemp_c}°</span> : null}
+                                </div>
+                                <div className={styles.maxima}>
+                                    <img src={maxima}></img>
+                                    <span className={styles.max}>Max.</span>
+                                    { clima.forecast ? <span className={styles.max2}>{clima.forecast.forecastday[0].day.maxtemp_c}°</span> : null}                                
+                                </div>
                             </div> 
-                        </div>      
-                        <div className={styles.esquerdaCimaDireita}>
-                            <div className={styles.minima}>
-                                <img src={minima}></img>
-                                <span className={styles.min}>Min.</span>
-                                { clima.forecast ? <span className={styles.min2}>{clima.forecast.forecastday[0].day.mintemp_c}°</span> : null}
-                                
-                                
-                            </div>
-                            <div className={styles.maxima}>
-                                <img src={maxima}></img>
-                                <span className={styles.max}>Max.</span>
-                                { clima.forecast ? <span className={styles.max2}>{clima.forecast.forecastday[0].day.maxtemp_c}°</span> : null}                                
-                            </div>
-                        </div> 
+                        }
+
                     </div>      
 
-                    <div className={styles.esquerdaMeio}>
-                        <div className={styles.esquerdaMeioEsquerda}>
-                            <img className={styles.media} src={media}></img>
-                            <div className={styles.sensacaoTerm}>
-                                { clima.current ? <p className={styles.sensacaoTerm2}>{clima.current.temp_c}</p> : null}
-                                { clima.current ? <p className={styles.sensacaoTerm3}>Sensação térmica {clima.current.feelslike_c}°</p> : null}
+                    { clima.current != undefined && 
+                        <div className={styles.esquerdaMeio}>
+                            <div className={styles.esquerdaMeioEsquerda}>
+                                <img className={styles.media} src={media}></img>
+                                <div className={styles.sensacaoTerm}>
+                                    { clima.current ? <p className={styles.sensacaoTerm2}>{clima.current.temp_c}</p> : null}
+                                    { clima.current ? <p className={styles.sensacaoTerm3}>Sensação térmica {clima.current.feelslike_c}°</p> : null}
+                                    
+                                </div>                            
+                            </div>
+                            <div className={styles.nublado}>
+                                { clima.current ? <img className={styles.desNublado} src={clima.current.condition.icon}></img> : null}
+                                { clima.current ?  <p className={styles.nublado2}>{clima.current.condition.text}</p> : null}
+                            
+                            </div>
+                        </div>
+                    }
+
+                    { clima.current != undefined && 
+                        <div className={styles.esquerdaBaixo}>
+                            <div className={styles.umidade}>
+                                <img className={styles.desUmidade} src={umidade}></img>
+                                <p className={styles.umidade2}>Umidade</p>
+                                <p className={styles.umidade3}>aaa %</p>
+                            </div>
+                            <div className={styles.velocidade}>
+                                <img className={styles.desVelocidade} src={velocidade_vento}></img>
+                                <p className={styles.velocidade2}>Velocidade do vento</p>
+                                { clima.current ? <p className={styles.velocidade3}>{clima.current.wind_kph}km/h</p> : null}
                                 
-                            </div>                            
+                            </div>
+                            <div className={styles.direcao}>
+                                <img className={styles.desDirecao} src={direcao_vento}></img>
+                                <p className={styles.direcao2}>Direção do vento</p>
+                                { clima.current ? <p className={styles.direcao3}>{clima.current.wind_dir}</p> : null}
+                                
+                            </div>
                         </div>
-                        <div className={styles.nublado}>
-                            <img className={styles.desNublado} src={nublado}></img>
-                            { clima.current ?  <p className={styles.nublado2}>{clima.current.condition.text}</p> : null}
-                           
-                        </div>
-                    </div>
-                    <div className={styles.esquerdaBaixo}>
-                        <div className={styles.umidade}>
-                            <img className={styles.desUmidade} src={umidade}></img>
-                            <p className={styles.umidade2}>Umidade</p>
-                            <p className={styles.umidade3}>66%</p>
-                        </div>
-                        <div className={styles.velocidade}>
-                            <img className={styles.desVelocidade} src={velocidade_vento}></img>
-                            <p className={styles.velocidade2}>Velocidade do vento</p>
-                            { clima.current ? <p className={styles.velocidade3}>{clima.current.wind_kph}km/h</p> : null}
-                            
-                        </div>
-                        <div className={styles.direcao}>
-                            <img className={styles.desDirecao} src={direcao_vento}></img>
-                            <p className={styles.direcao2}>Direção do vento</p>
-                            { clima.current ? <p className={styles.direcao3}>{clima.current.wind_dir}</p> : null}
-                            
-                        </div>
-                    </div>
+                    }
+
                 </div>
                 
                 <div className={styles.direita}>
