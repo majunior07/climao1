@@ -8,7 +8,7 @@ import Busca from "../../img/Busca.png";
 
 function Header({setClima}){
 
-    const [city, setCity] = useState('Belo Horizonte');
+    const [city, setCity] = useState('Campinas');
     
 
     const url = `http://api.weatherapi.com/v1/forecast.json?key=6dc397328dea4991b1e175154232205&days=5&lang=pt&q=${city}`;

@@ -49,12 +49,12 @@ function Home(){
                                 <div className={styles.minima}>
                                     <img src={minima}></img>
                                     <span className={styles.min}>Min.</span>
-                                    { clima.forecast ? <span className={styles.min2}>{clima.forecast.forecastday[0].day.mintemp_c}°</span> : null}
+                                    { clima.forecast ? <span className={styles.min2}>{clima.forecast.forecastday[0].day.mintemp_c.toFixed()}°</span> : null}
                                 </div>
                                 <div className={styles.maxima}>
                                     <img src={maxima}></img>
                                     <span className={styles.max}>Max.</span>
-                                    { clima.forecast ? <span className={styles.max2}>{clima.forecast.forecastday[0].day.maxtemp_c}°</span> : null}                                
+                                    { clima.forecast ? <span className={styles.max2}>{clima.forecast.forecastday[0].day.maxtemp_c.toFixed()}°</span> : null}                                
                                 </div>
                             </div> 
                         }
@@ -66,8 +66,8 @@ function Home(){
                             <div className={styles.esquerdaMeioEsquerda}>
                                 <img className={styles.media} src={media}></img>
                                 <div className={styles.sensacaoTerm}>
-                                    { clima.current ? <p className={styles.sensacaoTerm2}>{clima.current.temp_c}</p> : null}
-                                    { clima.current ? <p className={styles.sensacaoTerm3}>Sensação térmica {clima.current.feelslike_c}°</p> : null}
+                                    { clima.current ? <p className={styles.sensacaoTerm2}>{clima.current.temp_c.toFixed()}</p> : null}
+                                    { clima.current ? <p className={styles.sensacaoTerm3}>Sensação térmica {clima.current.feelslike_c.toFixed()}°</p> : null}
                                     
                                 </div>                            
                             </div>
@@ -84,7 +84,7 @@ function Home(){
                             <div className={styles.umidade}>
                                 <img className={styles.desUmidade} src={umidade}></img>
                                 <p className={styles.umidade2}>Umidade</p>
-                                <p className={styles.umidade3}>aaa %</p>
+                                { clima.current ? <p className={styles.umidade3}>{clima.current.humidity.toFixed()} %</p> : null}                                
                             </div>
                             <div className={styles.velocidade}>
                                 <img className={styles.desVelocidade} src={velocidade_vento}></img>
