@@ -5,10 +5,7 @@
     height: 768px;
     background: #e6e7e8;
     /* opacity: 0.08; */
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    flex-direction: column;
+
 
 }
 
@@ -18,18 +15,16 @@
     margin-left: 100px;
     margin-top: 58px;
     margin-right: 102px;
-    background-color: red;
-    border: 1px solid black;
     display: flex;
-    flex-wrap: wrap;    
+    /*flex-wrap: wrap;    */
     justify-content: start;
     align-items: start;
 }
 
-
+/*
 @media screen and (max-width: ){
     flex-direction: column;
-}
+}*/
 
 .esquerda{
     /* Layout Properties */ 
