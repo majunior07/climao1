@@ -11,7 +11,7 @@ function Header({setClima}){
     const [city, setCity] = useState('Campinas');
     
 
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=6dc397328dea4991b1e175154232205&days=6&lang=pt&q=${city}`;
+    const url = `http://api.weatherapi.com/v1/forecast.json?key=6dc397328dea4991b1e175154232205&q=Campinas&days=6&aqi=no&alerts=no&q=${city}`;
 
     const handleChange = (e) => {
         setCity(e.target.value)

@@ -32,7 +32,7 @@ function Home(){
 
             <div className={styles.central}>
 
-                { clima.current != undefined && 
+                { clima.forecast != undefined && 
                     <div className={styles.esquerda}>
 
                         <div className={styles.esquerdaCima}>   
@@ -107,10 +107,10 @@ function Home(){
                     </div>
                 }
 
-                { clima.forecast != undefined &&
+                    <div className={styles.direita}>      
 
-                    <div className={styles.direita}>                  
-                     
+                    {clima.forecast != undefined &&
+                    
                         <Dias setClima={setClima}
                             dia1="Sexta" 
                             dia2={clima.forecast.forecastday[1].date} 
@@ -121,9 +121,11 @@ function Home(){
                             imgMax={<img src={maxima_b}></img>}
                             max={`${clima.forecast.forecastday[1].day.maxtemp_c.toFixed()} º`}
                         />
-                   
-
-                     
+                
+                    }
+                
+                {clima.forecast != undefined &&
+                      
                         <Dias 
                             dia1="Sábado" 
                             dia2={clima.forecast.forecastday[2].date} 
@@ -135,47 +137,55 @@ function Home(){
                             max={`${clima.forecast.forecastday[2].day.maxtemp_c.toFixed()} º`}
                         />
                     
+                }
 
-                    
+                {clima.forecast != undefined &&
+
                         <Dias 
-                            dia1="Sábado" 
-                            dia2={clima.forecast.forecastday[3].date} 
-                            imgClima={<img className={styles.imgEnsolarado} src={clima.forecast.forecastday[3].day.condition.icon}></img>} 
-                            clima={clima.forecast.forecastday[3].day.condition.text}
+                            dia1="Domingo" 
+                            dia2={clima.forecast.forecastday[1].date} 
+                            imgClima={<img className={styles.imgEnsolarado} src={clima.forecast.forecastday[1].day.condition.icon}></img>} 
+                            clima={clima.forecast.forecastday[1].day.condition.text}
                             imgMin={<img src={minima_b}></img>}                      
-                            min={`${clima.forecast.forecastday[3].day.mintemp_c.toFixed()} º`} 
+                            min={`${clima.forecast.forecastday[1].day.mintemp_c.toFixed()} º`} 
                             imgMax={<img src={maxima_b}></img>}
-                            max={`${clima.forecast.forecastday[3].day.maxtemp_c.toFixed()} º`}
+                            max={`${clima.forecast.forecastday[1].day.maxtemp_c.toFixed()} º`}
                         />
                    
+                }
 
+                {clima.forecast != undefined &&
                     
                         <Dias 
-                            dia1="Sábado" 
-                            dia2={clima.forecast.forecastday[4].date} 
-                            imgClima={<img className={styles.imgEnsolarado} src={clima.forecast.forecastday[4].day.condition.icon}></img>} 
-                            clima={clima.forecast.forecastday[4].day.condition.text}
+                            dia1="Segunda" 
+                            dia2={clima.forecast.forecastday[2].date} 
+                            imgClima={<img className={styles.imgEnsolarado} src={clima.forecast.forecastday[2].day.condition.icon}></img>} 
+                            clima={clima.forecast.forecastday[2].day.condition.text}
                             imgMin={<img src={minima_b}></img>}                      
-                            min={`${clima.forecast.forecastday[4].day.mintemp_c.toFixed()} º`} 
+                            min={`${clima.forecast.forecastday[2].day.mintemp_c.toFixed()} º`} 
                             imgMax={<img src={maxima_b}></img>}
-                            max={`${clima.forecast.forecastday[4].day.maxtemp_c.toFixed()} º`}
+                            max={`${clima.forecast.forecastday[2].day.maxtemp_c.toFixed()} º`}
                         />
                   
+                }
 
+                {clima.forecast != undefined &&
                     
                         <Dias 
-                            dia1="Sábado" 
-                            dia2={clima.forecast.forecastday[5].date} 
-                            imgClima={<img className={styles.imgEnsolarado} src={clima.forecast.forecastday[5].day.condition.icon}></img>} 
-                            clima={clima.forecast.forecastday[5].day.condition.text}
+                            dia1="Terça" 
+                            dia2={clima.forecast.forecastday[1].date} 
+                            imgClima={<img className={styles.imgEnsolarado} src={clima.forecast.forecastday[1].day.condition.icon}></img>} 
+                            clima={clima.forecast.forecastday[1].day.condition.text}
                             imgMin={<img src={minima_b}></img>}                      
-                            min={`${clima.forecast.forecastday[5].day.mintemp_c.toFixed()} º`} 
+                            min={`${clima.forecast.forecastday[1].day.mintemp_c.toFixed()} º`} 
                             imgMax={<img src={maxima_b}></img>}
-                            max={`${clima.forecast.forecastday[5].day.maxtemp_c.toFixed()} º`}
+                            max={`${clima.forecast.forecastday[1].day.maxtemp_c.toFixed()} º`}
                         />
+                
+                }
                    
                     </div>
-                }
+            
 
             </div>
 

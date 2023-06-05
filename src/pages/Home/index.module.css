@@ -1,6 +1,5 @@
 .home{
-    top: 0px;
-    left: 0px;    
+    margin: 0 auto;   
     width: 1366px;
     height: 768px;
     background: #e6e7e8;
