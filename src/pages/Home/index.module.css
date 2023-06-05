@@ -3,8 +3,8 @@
     width: 1366px;
     height: 768px;
     background: #e6e7e8;
-
     /* opacity: 0.08; */
+
 
 }
 
@@ -15,9 +15,15 @@
     margin-top: 58px;
     margin-right: 102px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*flex-wrap: wrap;    */
+    justify-content: start;
+    align-items: start;
 }
+
+/*
+@media screen and (max-width: ){
+    flex-direction: column;
+}*/
 
 .esquerda{
     /* Layout Properties */ 
