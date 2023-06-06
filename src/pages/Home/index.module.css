@@ -19,6 +19,14 @@
     display: flex;
     justify-content: start;
     align-items: start;   
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1270px){
+    .central{
+        border: 5px solid black;
+        max-width: 669px;
+    }
 }
 
 .esquerda{
