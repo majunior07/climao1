@@ -112,7 +112,7 @@ function Home(){
                         { clima.forecast != undefined &&  
 
                             <Dias setClima={setClima}
-                                dia1="Sexta" 
+                                dia1={clima.forecast.forecastday[1].date}
                                 dia2={clima.forecast.forecastday[1].date} 
                                 imgClima={<img className={styles.imgEnsolarado} src={clima.forecast.forecastday[1].day.condition.icon} ></img>} 
                                 clima={clima.forecast.forecastday[1].day.condition.text}
