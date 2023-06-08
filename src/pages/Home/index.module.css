@@ -1,16 +1,36 @@
 .home{
     margin: 0 auto;   
     width: 1366px;
-    height: 768px;
+    height: 100%;
     background: #e6e7e8;
     /* opacity: 0.08; */
     display: flex;
     align-items: start;
     justify-content:start;
     flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 1370px){
+    .home{
+        max-width: 1100px;
+        width: 55%;
+        margin: 0 auto;
+        height: 100%;
+    }    
+}
+
+@media (max-width: 1250px){
+    .home{
+        max-width: 1100px;
+        margin: 0 auto;
+        height: 100%;
+    }    
 }
 
 .central{
+    background: #e6e7e8;
     width: 1164px;
     height: 580px;
     margin-left: 100px;
@@ -22,14 +42,31 @@
     flex-wrap: wrap;
 }
 
+<<<<<<< HEAD
 /*
 largura do notebook 1362 px
 */
 @media (max-width: 1270px){
+=======
+@media (max-width: 1370px){
+>>>>>>> f4d8d8ccb9f4794f1338ebfe58f683c81d2e5610
     .central{
-        border: 5px solid black;
-        max-width: 669px;
+        max-width: 1100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        height: 100%;
+    }    
+}
+
+@media (max-width: 1250px){
+    .central{
+        background-color: black;
+        margin: 0;
     }
+    
 }
 
 .esquerda{
