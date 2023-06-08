@@ -8,67 +8,21 @@
     align-items: start;
     justify-content:start;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-
-
-@media (max-width: 1370px){
-    .home{
-        max-width: 1100px;
-        width: 55%;
-        margin: 0 auto;
-        height: 100%;
-    }    
-}
-
-@media (max-width: 1250px){
-    .home{
-        max-width: 1100px;
-        margin: 0 auto;
-        height: 100%;
-    }    
 }
 
 .central{
     background: #e6e7e8;
     width: 1164px;
-    height: 580px;
+    height: 648px;
     margin-left: 100px;
     margin-top: 58px;
     margin-right: 102px;
     display: flex;
     justify-content: start;
     align-items: start;   
-    flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
-/*
-largura do notebook 1362 px
-*/
-@media (max-width: 1270px){
-=======
-@media (max-width: 1370px){
->>>>>>> f4d8d8ccb9f4794f1338ebfe58f683c81d2e5610
-    .central{
-        max-width: 1100px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        height: 100%;
-    }    
-}
-
-@media (max-width: 1250px){
-    .central{
-        background-color: black;
-        margin: 0;
-    }
-    
-}
-
+  
 .esquerda{
     /* Layout Properties */ 
     width: 669px;
@@ -409,4 +363,27 @@ largura do notebook 1362 px
     letter-spacing: 0px;
     color: #4B6584;
     opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .home{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .central{
+        margin: 0 auto;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .esquerdaCima{
+        flex-wrap: wrap;
+    }
+
+    .direita{
+        width: 100%;
+    }
 }

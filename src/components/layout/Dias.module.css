@@ -93,9 +93,7 @@
     justify-content: space-around;
 }
 
-.imgMin{
-  
-}
+
 
 .min{
     width: 32px;
@@ -152,4 +150,12 @@
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .externa{
+        border: 2px solid red;
+        width: 100%;
+        flex-wrap: wrap;
+    }
 }
