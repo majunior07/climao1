@@ -126,10 +126,6 @@
     justify-content: space-between;
 }
 
-.imgMaximo{
-    
-}
-
 .max{
     width: 32px;
     height: 17px;
@@ -154,8 +150,8 @@
 
 @media screen and (max-width: 768px){
     .externa{
-        border: 2px solid red;
-        width: 100%;
-        flex-wrap: wrap;
+        width: 93%;
+        height: 100px;
+        margin: 0 auto 10px auto;
     }
 }

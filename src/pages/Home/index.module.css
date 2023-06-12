@@ -370,17 +370,54 @@
         display: block;
         width: 100%;
         height: 100%;
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
 
 
     .central{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
         margin: 0 auto;
-        max-width: 100%;
-        flex-wrap: wrap;
     }
 
     .esquerdaCima{
-        flex-wrap: wrap;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .esquerdaMeio{
+        width: 90%;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .esquerdaMeioEsquerda{
+        border: 2px solid black;
+        width: 50%;
+        height: 50%;
+    }
+
+    .sensacaoTerm{
+        border: 2px solid blue;
+    }
+
+    .sensacaoTerm2{
+        border: 2px solid yellow;
+    }
+
+    .sensacaoTerm2{
+        border: 2px solid purple;
     }
 
     .direita{
