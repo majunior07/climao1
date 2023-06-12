@@ -173,10 +173,6 @@
     font: normal normal normal 160px/184px Arial;
     letter-spacing: 0px;
     color: #4B6584;
-    opacity: 1;text-align: center;
-    font: normal normal normal 160px/184px Arial;
-    letter-spacing: 0px;
-    color: #4B6584;
     opacity: 1;
 }
 
@@ -365,7 +361,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1370px){
     .home{
         display: block;
         width: 100%;
@@ -395,7 +391,6 @@
 
     .esquerdaMeio{
         width: 90%;
-        border: 2px solid black;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -403,24 +398,32 @@
     }
 
     .esquerdaMeioEsquerda{
-        border: 2px solid black;
-        width: 50%;
-        height: 50%;
+        border: 1px solid red;
+        width: 40%;
+        height: 50%;       
+        margin: 0 auto;
     }
 
     .sensacaoTerm{
-        border: 2px solid blue;
+        
+        width: 50%;
+        height: 50%;             
     }
 
     .sensacaoTerm2{
-        border: 2px solid yellow;
+        
+        font: normal normal normal 80px/95px Arial;       
     }
 
-    .sensacaoTerm2{
-        border: 2px solid purple;
+    .sensacaoTerm3{
+        width: 120%;
+        height: 100%; 
+
+        margin: 0 auto;
     }
 
     .direita{
-        width: 100%;
+        
+        margin: 0 auto;
     }
 }
