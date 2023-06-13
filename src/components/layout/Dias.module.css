@@ -148,7 +148,10 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1370px){
+@media screen and (max-width: 1290px){
+
+    /*1290px devido ao tamanho da tela do notebook*/
+
     .externa{
         width: 100%;
         height: 100%;

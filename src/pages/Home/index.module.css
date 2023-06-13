@@ -361,7 +361,10 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1370px){
+@media screen and (max-width: 1290px){
+
+    /*1290px devido ao tamanho da tela do notebook*/
+
     .home{
         display: block;
         width: 100%;
@@ -398,10 +401,12 @@
     }
 
     .esquerdaMeioEsquerda{
-        border: 1px solid red;
         width: 40%;
         height: 50%;       
         margin: 0 auto;
+        display: flex;
+        align-items: start;
+        justify-content: center;
     }
 
     .sensacaoTerm{
@@ -420,6 +425,40 @@
         height: 100%; 
 
         margin: 0 auto;
+    }
+
+    .nublado{
+        width: 50%;
+        height: 50%;
+    }
+
+    .desNublado{
+        width: 50%;
+        height: 50%;
+    }
+
+    .nublado2{
+        width: 50%;
+        height: 50%;
+        font: normal normal bold 14px/17px Arial;
+    }
+
+    .esquerdaBaixo{
+        border: 1px solid red;
+    }
+
+    .umidade{
+        border: 1px solid green;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .umidade3{
+        border: 1px solid blue;
+        font: normal normal bold 16px/18px Arial;
     }
 
     .direita{
