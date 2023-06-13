@@ -53,13 +53,14 @@
 }
 
 
-@media screen and (max-width: 1290px){
+@media screen and (max-width: 768px){
 
     /*1290px devido ao tamanho da tela do notebook*/
 
     .header{
         border: 1px solid black;
         width: 100%;
+        min-width: 490px;
         display: flex;
         align-items: center;    
         justify-content: space-between;       

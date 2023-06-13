@@ -148,7 +148,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1290px){
+@media screen and (max-width: 768px){
 
     /*1290px devido ao tamanho da tela do notebook*/
 

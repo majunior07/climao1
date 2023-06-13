@@ -361,7 +361,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 1290px){
+@media screen and (max-width: 768px){
 
     /*1290px devido ao tamanho da tela do notebook*/
 
@@ -381,11 +381,17 @@
         flex-direction: column;
         width: 100%;
         height: 100%;
-        margin: 0 auto;
+        margin: 20px auto;
+    }
+
+    .esquerda{
+        height: 80%;
+        width: 90%;
+        min-width: 490px;
     }
 
     .esquerdaCima{
-        width: 90%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -393,7 +399,7 @@
     }
 
     .esquerdaMeio{
-        width: 90%;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -409,21 +415,18 @@
         justify-content: center;
     }
 
-    .sensacaoTerm{
-        
+    .sensacaoTerm{        
         width: 50%;
         height: 50%;             
     }
 
     .sensacaoTerm2{
-        
-        font: normal normal normal 80px/95px Arial;       
+        font: normal normal normal 90px/105px Arial;       
     }
 
     .sensacaoTerm3{
-        width: 120%;
+        width: 150%;
         height: 100%; 
-
         margin: 0 auto;
     }
 
@@ -433,33 +436,79 @@
     }
 
     .desNublado{
-        width: 50%;
-        height: 50%;
+        width: 70%;
+        height: 70%;
     }
 
     .nublado2{
         width: 50%;
         height: 50%;
-        font: normal normal bold 14px/17px Arial;
+        font: normal normal bold 25px/28px Arial;
     }
 
     .esquerdaBaixo{
-        border: 1px solid red;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 auto;
     }
 
     .umidade{
-        border: 1px solid green;
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        width: 30%;
+        height: 80%;
+    }
+
+    .desUmidade{
+    }
+
+    .umidade2{
+        font: normal normal normal 16px/18px Arial;
+        width: 50%;
     }
 
     .umidade3{
-        border: 1px solid blue;
         font: normal normal bold 16px/18px Arial;
+        width: 50%;
     }
+
+    .velocidade{
+        width: 30%;
+        height: 80%;
+    }
+
+    .desVelocidade{
+    }
+
+    .velocidade2{
+        font: normal normal normal 16px/18px Arial;
+        width: 100%;
+    }
+
+    .velocidade3{
+        font: normal normal bold 16px/18px Arial;
+        width: 50%;
+    }
+
+    .direcao{
+        width: 30%;
+        height: 80%;
+    }
+
+    .desDirecao{
+    }
+
+    .direcao2{
+        font: normal normal normal 16px/18px Arial;
+        width: 100%;
+    }
+
+    .direcao3{
+        font: normal normal bold 16px/18px Arial;
+        width: 50%;
+    }
+
+
 
     .direita{
         
