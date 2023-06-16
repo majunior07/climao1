@@ -6,19 +6,21 @@ import styles from "./Header.module.css";
 import logo from "../../img/LOGO.png";
 import Busca from "../../img/Busca.png";
 
+import api from "../../services/api";
+
 function Header({setClima}){
 
     const [city, setCity] = useState('Campinas');
     
 
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=6dc397328dea4991b1e175154232205&q=Campinas&days=6&aqi=no&alerts=no&lang=pt&q=${city}`;
+    //const url = `http://api.weatherapi.com/v1/forecast.json?key=6dc397328dea4991b1e175154232205&q=Campinas&days=6&aqi=no&alerts=no&lang=pt&q=${city}`;
 
     const handleChange = (e) => {
         setCity(e.target.value)
     }
 
     function handleSearch() {
-        axios.get(url)
+        api.get(`&q=${city}`)
         .then((response) => {
             setClima(response.data);
             console.log(response.data)
