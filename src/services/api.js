@@ -9,8 +9,6 @@ const api = axios.create({
 api.interceptors.request.use((config) => {
     // Adicionar a chave de API á URL
     //config.url += `?key=6dc397328dea4991b1e175154232205&days=3&aqi=no&alerts=no&lang=pt`;
-    console.log(config)
-    config.headers.apiKey =`?key=6dc397328dea4991b1e175154232205`
     return config;
 });
 
