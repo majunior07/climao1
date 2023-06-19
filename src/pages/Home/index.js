@@ -16,19 +16,26 @@ import umidade from "../../img/umidade.png";
 import velocidade_vento from "../../img/velocidade_vento.png";
 import direcao_vento from "../../img/direcao_vento.png";
 
+
 import api from "../../services/api";
 import axios from "axios";
 
 import { useState } from "react";
+import Loading from "../../components/layout/loading";
 
 function Home(){
 
     const [clima, setClima] = useState({});
+    const [removeLoading, setRemoveLoading] = useState(false);
    
     return( 
         <div className={styles.home} >
-
+            
             <Header setClima={setClima}/>
+            
+
+            {/*!removeLoading && <Loading setRemoveLoading={setRemoveLoading}/>*/}
+            
 
             <div className={styles.central}>
 
@@ -105,7 +112,7 @@ function Home(){
                         }
 
                     </div>
-                }
+                } 
 
                     <div className={styles.direita}>         
 
@@ -180,7 +187,7 @@ function Home(){
                                 max={`${clima.forecast.forecastday[1].day.maxtemp_c.toFixed()} º`}
                             />
                         
-                        }
+                        }    
                    
                 </div>
                    
