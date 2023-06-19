@@ -53,12 +53,11 @@
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1290px){
 
     /*1290px devido ao tamanho da tela do notebook*/
 
     .header{
-        border: 1px solid black;
         width: 100%;
         min-width: 490px;
         display: flex;
@@ -69,12 +68,12 @@
     }
 
     .divInput{
-        border: 3px solid blue;
+    
     
     }
 
     .divUl li img{
-        border: 3px solid red;
+        
         
     }
 }
