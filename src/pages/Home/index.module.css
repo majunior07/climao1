@@ -361,7 +361,7 @@
     opacity: 1;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1290px){
 
     /*1290px devido ao tamanho da tela do notebook*/
 
@@ -386,8 +386,10 @@
 
     .esquerda{
         height: 80%;
-        width: 90%;
-        min-width: 490px;
+        width: 80%;
+        min-width: 850px;
+        margin-top: 20px;
+        margin-bottom: 30px;    
     }
 
     .esquerdaCima{
@@ -401,15 +403,14 @@
     .esquerdaMeio{
         width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: space-around;
         margin: 0 auto;
     }
 
     .esquerdaMeioEsquerda{
-        width: 40%;
+        width: 20%;
         height: 50%;       
-        margin: 0 auto;
+        margin: 0;
+        margin-left: 15%;
         display: flex;
         align-items: start;
         justify-content: center;
@@ -427,16 +428,17 @@
     .sensacaoTerm3{
         width: 150%;
         height: 100%; 
-        margin: 0 auto;
+        margin: 0;
     }
 
     .nublado{
         width: 50%;
         height: 50%;
+        margin-left: 18%;
     }
 
     .desNublado{
-        width: 70%;
+        width: 20%;
         height: 70%;
     }
 
@@ -511,7 +513,45 @@
 
 
     .direita{
-        
-        margin: 0 auto;
+        width: 60%;
+        margin-top: 0px;
     }
+}
+
+
+@media screen and (max-width: 900px){
+    
+
+    .home{
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-width: 700px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+              
+
+    .central{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        min-width: 800px;
+        margin: 20px auto;
+    }
+
+    
+
+    .esquerda{
+        height: 80%;
+        width: 80%;
+        min-width: 700px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
 }

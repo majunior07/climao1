@@ -3,8 +3,8 @@ import axios from "axios";
 //Criar uma instância do Axios com a baseURL
 const api = axios.create({
 
-    baseURL: 'https://api.weatherapi.com/v1/forecast.json?days=3&aqi=no&alerts=no&lang=pt&key=6dc397328dea4991b1e175154232205&q=Campinas',
-    
+    baseURL: 'http://api.weatherapi.com/v1/forecast.json?key=6dc397328dea4991b1e175154232205&days=6&aqi=no&alerts=no&lang=pt&q=Campinas',
+
 });
 
 /*
