@@ -40,8 +40,7 @@ function Home(){
             <div className={styles.central}>
 
                 { /*clima.forecast != undefined && !removeLoading &&*/
-                clima.forecast === undefined && <Loading/> || 
-                !removeLoading && 
+                clima.forecast != undefined && 
 
                     <div className={styles.esquerda}>
 
