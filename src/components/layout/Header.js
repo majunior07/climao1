@@ -13,9 +13,14 @@ function Header({setClima, setLoading}){
 
 
     const [city, setCity] = useState('Campinas');
+/*
+    const api = {
+        baseURL: 'http://api.weatherapi.com/v1/',
+        key: '6dc397328dea4991b1e175154232205',
+    };
+*/
 
-
-    //const url = `http://api.weatherapi.com/v1/forecast.json?key=6dc397328dea4991b1e175154232205&q=Campinas&days=3&aqi=no&alerts=no&lang=pt&q=${city}`;
+    //const url = `http://api.weatherapi.com/v1/forecast.json?key=6dc397328dea4991b1e175154232205&&days=3&aqi=no&alerts=no&lang=pt&q=${city}`;
 
 
     const handleChange = (e) => {
@@ -24,7 +29,7 @@ function Header({setClima, setLoading}){
 
     function handleSearch() {
         
-        api.get()
+        api.get(`${api.baseURL}forecast.json?days=3&&aqi=no&alerts=no&lang=pt&q=${city}&key=6dc397328dea4991b1e175154232205`)
         .then((response) => {
             console.log(response.data);
             setClima(response.data);  
