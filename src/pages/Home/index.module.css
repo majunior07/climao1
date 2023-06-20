@@ -416,7 +416,7 @@
         justify-content: center;
     }
 
-    .sensacaoTerm{        
+    .sensacaoTerm{      
         width: 50%;
         height: 50%;             
     }
@@ -426,9 +426,15 @@
     }
 
     .sensacaoTerm3{
-        width: 150%;
-        height: 100%; 
-        margin: 0;
+    width: 200px;
+    height: 30px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2BCBBA;
+    border-radius: 50px;
+    opacity: 1;
     }
 
     .nublado{

@@ -33,13 +33,16 @@ function Home(){
             
             <Header setClima={setClima}/>
             
-
-            {/*!removeLoading && <Loading setRemoveLoading={setRemoveLoading}/>*/}
+            { /*clima.forecast === undefined && <Loading/>*/}
+            {/*!removeLoading && <Loading setRemoveLoading={setRemoveLoading}/> */}
             
 
             <div className={styles.central}>
 
-                { clima.forecast != undefined && 
+                { /*clima.forecast != undefined && !removeLoading &&*/
+                clima.forecast === undefined && <Loading/> || 
+                !removeLoading && 
+
                     <div className={styles.esquerda}>
 
                         <div className={styles.esquerdaCima}>   

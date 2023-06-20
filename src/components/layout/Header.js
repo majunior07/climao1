@@ -9,7 +9,7 @@ import api from "../../services/api";
 
 import Loading from "../../components/layout/loading";
 
-function Header({setClima, setRemoveLoading}){
+function Header({setClima, setLoading}){
 
 
     const [city, setCity] = useState('Campinas');
@@ -23,13 +23,12 @@ function Header({setClima, setRemoveLoading}){
     }
 
     function handleSearch() {
-
+        
         api.get()
         .then((response) => {
             console.log(response.data);
             setClima(response.data);  
-
-            setRemoveLoading(true);
+            
         })
         .catch(error => console.log(error));       
         
