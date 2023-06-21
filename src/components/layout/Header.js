@@ -9,6 +9,8 @@ import api from "../../services/api";
 
 import Loading from "../../components/layout/loading";
 
+import {REACT_APP_CLIMAO_KEY} from '../../key';
+
 function Header({setClima, setLoading}){
 
 
@@ -28,10 +30,9 @@ function Header({setClima, setLoading}){
     }
 
     function handleSearch() {
-
-        console.log(api)
-        api.get(`${api.baseURL}forecast.json?days=3&&aqi=no&alerts=no&lang=pt&q=${city}&key=6dc397328dea4991b1e175154232205`)
-        .then((response) => {
+       
+        api.get(`${api.baseURL}forecast.json?days=3&&aqi=no&alerts=no&lang=pt&q=${city}&key=${REACT_APP_CLIMAO_KEY}`)
+        .then((response) => {            
             console.log(response.data);
             setClima(response.data);  
             
