@@ -28,7 +28,8 @@ function Header({setClima, setLoading}){
     }
 
     function handleSearch() {
-        
+
+        console.log(api)
         api.get(`${api.baseURL}forecast.json?days=3&&aqi=no&alerts=no&lang=pt&q=${city}&key=6dc397328dea4991b1e175154232205`)
         .then((response) => {
             console.log(response.data);
