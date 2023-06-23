@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import axios from "axios";
 
@@ -14,7 +14,7 @@ import Loading from "../../components/layout/loading";
 function Header({setClima, setLoading}){
 
 
-    const [city, setCity] = useState('Campinas');
+    const [city, setCity] = useState('');
 /*
     const api = {
         baseURL: 'http://api.weatherapi.com/v1/',
@@ -29,9 +29,15 @@ function Header({setClima, setLoading}){
         setCity(e.target.value)
     }
 
-    function handleSearch() {
-        
-        api.get(`${api.baseURL}forecast.json?days=3&&aqi=no&alerts=no&lang=pt&q=${city}&key=${process.env.REACT_APP_CLIMAO_KEY}`)
+    useEffect(
+        function(){
+            handleSearch()
+        }, [city]
+    )
+
+    async function handleSearch() {      
+
+        await api.get(`${api.baseURL}forecast.json?days=3&&aqi=no&alerts=no&lang=pt&q=${city}&key=${process.env.REACT_APP_CLIMAO_KEY}`)
         .then((response) => {            
             console.log(response.data);
             setClima(response.data);  

@@ -4,8 +4,7 @@ import axios from "axios";
 //Criar uma instância do Axios com a baseURL
 const api = axios.create({
 
-    baseURL: `http://api.weatherapi.com/v1/`,
-    
+    baseURL: `http://api.weatherapi.com/v1/`,    
     
 });
 
