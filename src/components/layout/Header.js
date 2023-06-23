@@ -29,11 +29,7 @@ function Header({setClima, setLoading}){
         setCity(e.target.value)
     }
 
-    useEffect(
-        function(){
-            handleSearch()
-        }, [city]
-    )
+    
 
     async function handleSearch() {      
 
@@ -47,6 +43,8 @@ function Header({setClima, setLoading}){
         
         setCity('')
     };
+
+
 
     return(
         
