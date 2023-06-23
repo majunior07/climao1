@@ -20,6 +20,7 @@
 }
 
 .data ul{
+    border: 1px solid black;
     list-style: none;
     height: 97px;
     margin-left: 19px;
@@ -30,6 +31,7 @@
 }
 
 .dia{
+    border: 1px solid red;
     margin-top: 28px;
     width: 95px;
     height: 30px;
@@ -42,6 +44,7 @@
 }
 
 .dia2{
+    border: 1px solid blue;
     width: 90px;
     height: 29px;
     margin-bottom: 14px;
