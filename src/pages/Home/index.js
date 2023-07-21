@@ -26,7 +26,7 @@ import Loading from "../../components/layout/loading";
 function Home(){
 
     const [clima, setClima] = useState({});
-    const [removeLoading, setRemoveLoading] = useState(false);
+    //const [removeLoading, setRemoveLoading] = useState(false);
    
     return( 
         <div className={styles.home} >
