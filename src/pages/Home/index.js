@@ -152,7 +152,7 @@ function Home(){
                             <Dias 
                                 dia1="Domingo" 
                                 dia2={clima.forecast.forecastday[1].date} 
-                                imgClima={<img className={styles.imgEnsolarado} src={clima.forecast.forecastday[1].day.condition.icon}></img>} 
+                                imgClima={<img className={styles.imgEnsolarado} src={clima.forecast.forecastday[2].day.condition.icon}></img>} 
                                 clima={clima.forecast.forecastday[1].day.condition.text}
                                 imgMin={<img src={minima_b}></img>}                      
                                 min={`${clima.forecast.forecastday[1].day.mintemp_c.toFixed()} º`} 

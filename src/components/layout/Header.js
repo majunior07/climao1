@@ -33,7 +33,7 @@ function Header({setClima, setLoading}){
 
     async function handleSearch() {      
 
-        await api.get(`${api.baseURL}forecast.json?days=3&&aqi=no&alerts=no&lang=pt&q=${city}&key=${process.env.REACT_APP_CLIMAO_KEY}`)
+        await api.get(`${api.baseURL}forecast.json?days=5&&aqi=no&alerts=no&lang=pt&q=${city}&key=${process.env.REACT_APP_CLIMAO_KEY}`)
         .then((response) => {            
             console.log(response.data);
             setClima(response.data);  
